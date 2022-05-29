@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "ICP_COURSE_PRO_2": {
+      "main": "src/ICP_COURSE_PRO_2/main.mo",
+      "type": "motoko"
+    },
+    "ICP_COURSE_PRO_2_assets": {
+      "dependencies": [
+        "ICP_COURSE_PRO_2"
+      ],
+      "frontend": {
+        "entrypoint": "src/ICP_COURSE_PRO_2_assets/src/index.html"
+      },
+      "source": [
+        "src/ICP_COURSE_PRO_2_assets/assets",
+        "dist/ICP_COURSE_PRO_2_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
